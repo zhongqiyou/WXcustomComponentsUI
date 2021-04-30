@@ -1,0 +1,88 @@
+.share-btn{
+  width:80rpx;
+  height:40rpx;
+  background:#DC143C;
+  position:absolute;
+  border-radius:10rpx;
+  z-index:999;
+  top:36rpx;
+  right:34rpx;
+  font-size:24rpx;
+  color:#fff;
+  line-height:40rpx;
+  text-align:center;
+}
+.mask{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mask-header{
+   width: 600rpx;
+   height:964rpx;
+   background: 	#FFDEAD;
+   padding: 20rpx 20rpx 0rpx 20rpx;
+}
+.mask-header-image{
+  width: 600rpx;
+  height:578rpx;
+  background: #fff;
+}
+.mask-content{
+  width: 100%;
+  height: 174rpx;
+  margin: 40rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mask-content-left{
+  width: 65%;
+  height: 174rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.mask-content-left-title{
+  margin-left:10rpx;
+  flex: 1;
+}
+.mask-content-left-title>text{
+   font-size:16rpx;
+   display:block;
+}
+.card-num{
+  font-size:16rpx;
+}
+.card-num>text{
+ color: red;
+}
+
+.mask-content-left>image{
+   width: 100rpx;
+   height: 100rpx;
+}
+
+.mask-content-right{
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  
+}
+.mask-footer{
+  background: #fff;
+  text-align: center;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

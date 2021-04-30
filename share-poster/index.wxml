@@ -1,0 +1,31 @@
+<view class="share-btn" bindtap="onChangeMask" data-maskValue="1">
+	分享
+</view>
+
+
+<view class="mask" wx:if="{{mask}}" bindtap="onChangeMask" data-maskValue="0">
+
+	   <view class="mask-header" catchtap="onClearCatch" id='mask-canvas'>
+			 <image class="mask-header-image" src="{{poster}}" id='mask-header'></image>
+			 <view class="mask-content">
+						<view class="mask-content-left" id="mask-content">
+								 <image src="{{personalInfo.avatar}}" id="mask-userimg"></image>
+								 <view class="mask-content-left-title">
+									     <text style="font-size:24rpx;color:#DC143C;">{{personalInfo.nickname}}</text>
+									     <text>日期:{{today}}</text>
+									     <!-- <view class="card-num">我在广东盛和塾已累计打卡 <text>{{continuity_date}}</text>天</view> -->
+									     <view class="card-num">我在广东盛和塾已累计打卡{{continuity_date}}天</view>
+									     <text>识别二维码，和我一起坚持每日精进</text>
+								 </view>
+						</view>
+						<image class="mask-content-right" src="{{AppletsCode}}" mode="aspectFit" id="mask-code"></image>
+			 </view>
+			 <view class="mask-footer"  bindlongtap="longPressSaveImg">长按保存图片</view>
+		 </view>
+</view>
+
+<canvas canvas-id="myCanvas" style="width:640rpx;height:884rpx;z-index:999999;postion:fixed;top:10000rpx;"></canvas>
+
+
+	
+
